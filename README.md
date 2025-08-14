@@ -23,70 +23,69 @@ LogiStudent is a multi-role web application that digitizes and automates this en
 
 *   **Secure JWT Authentication:**
 
-*   Full user registration, login, and logout flow.
-*   Passwords are encrypted using bcrypt.js.
-*   Secure, token-based session management ensures private routes are protected.
+    -   Full user registration, login, and logout flow.
+    -   Passwords are encrypted using bcrypt.js.
+    -   Secure, token-based session management ensures private routes are protected.
 
 *   **Dynamic Homepage:**
-
-*   Features real user testimonials fetched directly from the database to build social proof and trust.
-*   Serves as an engaging landing page for new and returning users.
+    -   Features real user testimonials fetched directly from the database to build social proof and trust.
+    -   Serves as an engaging landing page for new and returning users.
 
 *   **Personalized Student Dashboard:**
 
-*   An authenticated, private area for students to view their complete booking history.
-*   Real-time status updates for each booking (e.g., "Pending Confirmation", "In Storage", "Delivered").
-*   Displays payment details, including submitted transaction IDs.
+    -   An authenticated, private area for students to view their complete booking history.
+    -   Real-time status updates for each booking (e.g., "Pending Confirmation", "In Storage", "Delivered").
+    -   Displays payment details, including submitted transaction IDs.
 
 *   **Multi-Step Booking System:**
 
-*   An intuitive form for selecting multiple item types (trolleys, mattresses, etc.).
-*   Dynamically calculates the total price in real-time as items are added.
-*   Fetches and displays available pickup slots directly from the database, preventing overbooking.
+    -   An intuitive form for selecting multiple item types (trolleys, mattresses, etc.).
+    -   Dynamically calculates the total price in real-time as items are added.
+    -   Fetches and displays available pickup slots directly from the database, preventing overbooking.
 
 *   **Manual Payment Confirmation Flow:**
 
-*   A practical payment page featuring a static UPI QR code and UPI ID.
-*   A dedicated form for users to submit their UPI transaction ID, which is then visible to the admin for verification.
+    -   A practical payment page featuring a static UPI QR code and UPI ID.
+    -   A dedicated form for users to submit their UPI transaction ID, which is then visible to the admin for verification.
 
-**Technology Stack**
+*   **Technology Stack**
 
-*   **Frontend:** React, Redux Toolkit (for state management), React Router, Axios, Material-UI
-*   **Backend:** Node.js, Express.js, Mongoose
-*   **Database:** MongoDB (with MongoDB Atlas for cloud hosting)
-*   **Authentication:** JSON Web Tokens (JWT), bcrypt.js for password hashing
+      - **Frontend:** React, Redux Toolkit (for state management), React Router, Axios, Material-UI
+      - **Backend:** Node.js, Express.js, Mongoose
+      - **Database:** MongoDB (with MongoDB Atlas for cloud hosting)
+      - **Authentication:** JSON Web Tokens (JWT), bcrypt.js for password hashing
+
 *   **Deployment:**
-
-*   **Backend API:** Render
-*   **Frontend Client:** Netlify
+    -   **Backend API:** Render
+    -   **Frontend Client:** Netlify
 
 **Admin-Facing Features:**
 
 *   **Role-Based Access Control:**
 
-*   A secure, private dashboard accessible only to users with the admin role.
-*   The UI dynamically renders admin-specific navigation links upon login.
+    -   A secure, private dashboard accessible only to users with the admin role.
+    -   The UI dynamically renders admin-specific navigation links upon login.
 
 *   **Comprehensive Booking Management:**
 
-*   A centralized table displaying all user bookings in the system.
-*   User details (name, email) are populated from the users collection for easy reference.
-*   Submitted transaction IDs are clearly visible for payment verification.
+    -   A centralized table displaying all user bookings in the system.
+    -   User details (name, email) are populated from the users collection for easy reference.
+    -   Submitted transaction IDs are clearly visible for payment verification.
 
 *   **Interactive Status Updates:**
 
-*   Admins can instantly update the status of any booking via a simple dropdown menu.
-*   Changes are reflected in real-time on both the admin and student dashboards.
+    -   Admins can instantly update the status of any booking via a simple dropdown menu.
+    -   Changes are reflected in real-time on both the admin and student dashboards.
 
 *   **Full Slot Management (CRUD):**
-
-*   The dashboard includes a complete interface for creating, viewing, and deleting available time slots.
-*   This makes the application fully manageable without external tools like Postman or Hopscotch.
+ 
+    -   The dashboard includes a complete interface for creating, viewing, and deleting available time slots.
+    -   This makes the application fully manageable without external tools like Postman or Hopscotch.
 
 *   **Intelligent Capacity Tracking:**
 
-*   The system automatically increments a slot's bookingsCount when a new booking is made.
-*   The count is automatically decremented if an admin cancels a booking, freeing up the slot.
+    -   The system automatically increments a slot's bookingsCount when a new booking is made.
+    -   The count is automatically decremented if an admin cancels a booking, freeing up the slot.
 
 **3\. Architectural Highlights & Technology Stack**
 
