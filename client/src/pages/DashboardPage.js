@@ -38,7 +38,7 @@ function DashboardPage() {
                     <Box key={booking._id} sx={{ p: 2, border: '1px solid grey', my: 1 }}>
                         <Typography>Booking ID: {booking._id}</Typography>
                         <Typography>Status: {booking.status}</Typography>
-                        <Typography>Total Price: ${booking.totalPrice}</Typography>
+                        <Typography>Total Price: ₹{booking.totalPrice}</Typography>
                     </Box>
                 ))
             ) : (
