@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/admin/';
-const SLOTS_API_URL = 'http://localhost:5000/api/slots/';
+const API_URL = 'https://logistudent.onrender.com/api/admin/';
+const SLOTS_API_URL = 'https://logistudent.onrender.com/api/slots/';
 // Get all bookings
 const getAllBookings = async (token) => {
     const config = { headers: { Authorization: `Bearer ${token}` } };

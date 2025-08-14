@@ -1,6 +1,6 @@
 import axios from 'axios';
-const SLOTS_API_URL = 'http://localhost:5000/api/slots/';
-const API_URL = 'http://localhost:5000/api/bookings/';
+const SLOTS_API_URL = 'https://logistudent.onrender.com/api/slots/';
+const API_URL = 'https://logistudent.onrender.com/api/bookings/';
 
 // Get user bookings
 const getMyBookings = async (token) => {
